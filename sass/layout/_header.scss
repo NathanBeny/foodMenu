@@ -1,0 +1,14 @@
+.header {
+  background: $colour-primary;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  &__logo {
+    font-size: 7rem;
+    color: $colour-secondary;
+    @include heading-shadow($colour-white);
+  }
+}
