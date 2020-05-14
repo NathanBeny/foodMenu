@@ -1,0 +1,112 @@
+.proj-grid {
+  @media screen and (min-width: 768px) {
+    display: grid;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 2fr);
+  grid-column-gap: $grid-gutter;
+}
+
+.proj-prev {
+  width: 100%;
+  $self: &;
+  color: $colour-white;
+  margin-bottom: $grid-gutter;
+  text-align: center;
+  font-style: italic;
+  a {
+    display: block;
+    color: $colour-white;
+    text-decoration: none;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @media screen and (min-width: 768px) {
+      padding-top: 10rem;
+      height: 40rem;
+      margin: 0 $layout-margin 0 $layout-margin;
+    }
+  }
+}
+
+.proj-prev__1 {
+  p {
+    font-family: $font-menu1;
+  }
+  h2 {
+    font-family: $font-menuh1;
+  }
+
+  &__icon {
+    padding-top: 1rem;
+    font-size: 4rem;
+    background: linear-gradient(to right, $colour-menu1 0%, $colour-menu2 65%);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+.proj-prev__2 {
+  h2 {
+    color: $colour-menu2;
+    font-family: $font-menuh2;
+  }
+  p {
+    font-family: $font-menu2;
+    background: linear-gradient(to right, $colour-menu2 0%, $colour-menu1 100%);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 5rem;
+    }
+  }
+}
+.proj-prev__3 {
+  h2 {
+    font-family: $font-menuh3;
+    color: #4ba8ff;
+  }
+  p {
+    font-family: $font-menu3;
+    // ************************************
+    background: linear-gradient(to right, $colour-menu3 0%, $colour-menu4 100%);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    // ************************************
+    font-style: italic;
+    @media screen and (min-width: 768px) {
+      padding-top: 5rem;
+    }
+  }
+}
+.proj-prev__4 {
+  font-size: 3rem;
+  h2 {
+    font-family: $font-menuh4;
+    color: $colour-menu5;
+  }
+  p {
+    font-family: $font-menu4;
+    // ************************************
+    background: linear-gradient(to right, $colour-menu5 0%, $colour-menu6 100%);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    // ************************************
+    font-style: italic;
+    @media screen and (min-width: 768px) {
+      padding-top: 5rem;
+    }
+  }
+}

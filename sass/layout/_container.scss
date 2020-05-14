@@ -1,5 +1,6 @@
 .container {
-  margin: $layout-margin;
+  @media screen and (min-width: 768px) {
+    margin: 3rem $layout-margin $layout-margin $layout-margin;
+  }
   padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-  @include border($colour-accent);
 }

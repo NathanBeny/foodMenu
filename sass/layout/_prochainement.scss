@@ -1,0 +1,40 @@
+.prochain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 10rem;
+  &__link {
+    width: 30%;
+    background: $colour-primary;
+    font-size: 2rem;
+    color: $colour-accent;
+    border-radius: 10%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+
+    font-style: italic;
+    @media screen and (max-width: 425px) {
+      font-size: 1.5rem;
+      width: 55%;
+    }
+    @media screen and (width: 768px) {
+      width: 35%;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $colour-accent;
+    &:hover {
+      color: $colour-secondary;
+      &:after {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        animation: ellipsis steps(4, end) 900ms infinite;
+        content: "\2026";
+        width: 0px;
+      }
+    }
+  }
+}

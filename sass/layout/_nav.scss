@@ -1,20 +1,28 @@
 .nav {
-  padding-right: $layout-margin;
+  padding-right: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: $colour-accent;
+    &:hover {
+      color: $colour-secondary;
+    }
+  }
   &__link {
     display: inline;
-    font-size: 3rem;
+    text-align: center;
     padding-left: 1.5rem;
-
-    & a {
-      text-decoration: none;
-      color: $colour-accent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: italic;
+    @media screen and (max-width: 425px) {
+      font-size: 1.6rem;
     }
-
-    & a:hover {
-      color: $colour-white;
+    &:hover {
+      animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
     }
   }
 }

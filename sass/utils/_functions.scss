@@ -1,7 +1,26 @@
-@function lightness-shift($colour) {
-  @if (lightness($colour) < 25%) {
-    @return lighten($colour, 10%);
-  } @else {
-    @return darken($colour, 10%);
+@for $i from 1 through 4 {
+  .proj-prev__#{$i} {
+    background-color: lighten($colour-menu, $i * 3%);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $colour-menu;
+    }
+  }
+}
+// effet widdle
+@keyframes headshake {
+  25% {
+    // entièrement à droite
+    transform: translateX($shake-intensity);
+  }
+  75% {
+    // entièrement à gauche
+    transform: translateX($shake-intensity * -1);
+  }
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;
   }
 }

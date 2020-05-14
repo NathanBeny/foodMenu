@@ -1,8 +1,11 @@
 .footer {
   background: $colour-primary;
-  height: 6rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  @include heading-shadow($colour-white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

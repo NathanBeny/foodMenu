@@ -3,7 +3,73 @@ $colour-secondary: #fdfdfd;
 $colour-accent: yellow;
 $colour-white: rgb(0, 0, 0);
 $colour-invalid: #db464b;
+$colour-menu: #f8cbcb;
+
+// colormenuacceuil1234
+$colour-menu1: #4506c2;
+$colour-menu2: #fd8700;
+$colour-menu3: #001774;
+$colour-menu4: #42baff2c;
+$colour-menu5: #006408;
+$colour-menu6: #31ff31cc;
+// fontaccueilmenup
+$font-menu1: "Devonshire";
+$font-menu2: "Kurale";
+$font-menu3: "Dancing Script";
+$font-menu4: "Kaushan Script";
+// fontmenuaccueilh2
+$font-menuh1: "Itim";
+$font-menuh2: "Abril Fatface";
+$font-menuh3: "Chilanka";
+$font-menuh4: "Chilanka";
 
 $heading-shadow-size: 0.55rem;
 $layout-margin: 6rem;
 $grid-gutter: $layout-margin * 0.25;
+$shake-intensity: 1%;
+
+//Variables des menus
+$num-menu: (1 2 3 4);
+$bg-menu: (
+  1: #fcdfdb,
+  2: #fff5fe,
+  3: #f3f3f3,
+  4: #fdfffc,
+);
+
+$font-menu__menu: (
+  1: "Itim",
+  2: "Abril Fatface",
+  3: "Chilanka",
+  4: "Chilanka",
+);
+$color1-menu__titre: (
+  1: black,
+  2: #d17122,
+  3: #1530b7,
+  4: #55924d,
+);
+$color2-menu__titre: (
+  1: black,
+  2: #a6669a,
+  3: #56a7e6,
+  4: #c8fa80,
+);
+$color3-menu__titre: (
+  1: black,
+  2: #6b30eb,
+  3: #56a7e6,
+  4: #c8fa80,
+);
+$color-menu__menu: (
+  1: black,
+  2: #c17624,
+  3: #56a7e6,
+  4: #77bf4f,
+);
+$font-list: (
+  1: "Devonshire",
+  2: "Kurale",
+  3: "Dancing Script",
+  4: "Kaushan Script",
+);
