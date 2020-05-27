@@ -8,7 +8,7 @@
 
 .list {
   box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
-  width: 18rem;
+  width: 100%;
   margin: 0 auto 2rem auto;
   padding: 0 2rem 6rem 2rem;
   display: flex;
@@ -22,7 +22,7 @@
     }
   }
   &__ico {
-    width: 2.5rem;
+    width: 5rem;
     height: 100%;
     margin-top: 1rem;
   }
@@ -33,7 +33,7 @@
     align-items: center;
     margin: 0;
     img {
-      width: 6rem;
+      width: 8rem;
       height: 100%;
     }
 
@@ -60,6 +60,7 @@
   }
 
   article {
+    width: 100%;
     margin: 0;
     ul {
       list-style: none;
@@ -80,7 +81,8 @@
     display: flex;
     justify-content: center;
     img {
-      width: 1.5rem;
+      padding-top: 1.2rem;
+      width: 3rem;
     }
   }
 
@@ -95,18 +97,19 @@
   // MEDIA QUERIES ---------------------------------
 
   @media all and (min-width: 1440px) {
-    width: 50rem;
+    width: 95%;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
       margin-top: 3.5rem;
     }
     &__ico {
-      width: 4rem;
+      padding-top: 10rem;
+      width: 15rem;
     }
     &__step {
       img {
-        width: 20rem;
+        width: 38rem;
       }
     }
     ul {
@@ -118,24 +121,25 @@
     &__footer {
       img {
         transform: translateY(0.9rem);
-        width: 3rem;
+        width: 8rem;
       }
     }
   }
 
   @media all and (min-width: 1024px) and (max-width: 1439px) {
-    width: 50rem;
+    width: 95%;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
-      margin-top: 3.5rem;
+      margin-top: 1.5rem;
     }
     &__ico {
-      width: 3rem;
+      padding-top: 4rem;
+      width: 8rem;
     }
     &__step {
       img {
-        width: 15rem;
+        width: 25rem;
       }
     }
     ul {
@@ -145,28 +149,40 @@
       margin-top: 1.3rem;
     }
     &__footer {
+      p {
+        margin-top: 2rem;
+      }
       img {
         transform: translateY(1rem);
-        width: 2.5rem;
+        width: 7.5rem;
       }
     }
   }
 
   @media all and (min-width: 768px) and (max-width: 1023px) {
-    width: 27rem;
+    width: 65rem;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
       margin-top: 2.5rem;
+      li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    &__ico {
+      width: 8rem;
     }
     &__step {
       img {
-        width: 8rem;
+        width: 20rem;
       }
     }
     &__footer {
       img {
         transform: translateY(0.5rem);
+        width: 6rem;
       }
     }
   }

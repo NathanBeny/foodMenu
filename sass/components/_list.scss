@@ -8,11 +8,11 @@
   //N° de la police du header & footer
     1,
   //N° de la police des plats
-    1.3rem,
+    2.9rem,
   //Taille de la police du titre
-    0.8rem,
+    2.8rem,
   //Taille de la police du titre
-    0.6rem,
+    1.7rem,
   //Taille de la police des plats
     1,
   //1ère couleur de la police du titre
@@ -34,16 +34,16 @@
 );
 
 @include list(2, 2);
-@include list-font(2, 2, 2, 1rem, 0.8rem, 0.8rem, 2, 2, 2, 2, 2, 2, 2, 2, 2);
+@include list-font(2, 2, 2, 2rem, 1.9rem, 1.2rem, 2, 2, 2, 2, 2, 2, 2, 2, 2);
 
 @include list(3, 3);
 @include list-font(
   3,
   3,
   3,
-  1rem,
-  1rem,
-  0.8rem,
+  2.3rem,
+  2.2rem,
+  1.4rem,
   3,
   3,
   3,
@@ -60,9 +60,9 @@
   4,
   4,
   4,
-  1rem,
-  1rem,
-  0.8rem,
+  2rem,
+  2rem,
+  1.2rem,
   4,
   4,
   4,
