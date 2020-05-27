@@ -1,17 +1,27 @@
 .header {
   background: $colour-primary;
-  height: 10rem;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   &__logo {
-    font-size: 5rem;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif, Arial, Helvetica;
+    font-size: 4rem;
     color: $colour-accent;
-    @include heading-shadow($colour-white);
-    @media screen and (min-width: 768px) {
+
+    @media all and (min-width: 1440px) {
       font-size: 7rem;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      font-size: 5rem;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      font-size: 6rem;
     }
   }
 }

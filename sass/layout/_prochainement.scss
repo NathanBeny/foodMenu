@@ -5,21 +5,27 @@
   text-align: center;
   padding-bottom: 10rem;
   &__link {
-    width: 30%;
+    width: 55%;
     background: $colour-primary;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $colour-accent;
     border-radius: 10%;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-
     font-style: italic;
-    @media screen and (max-width: 425px) {
-      font-size: 1.5rem;
-      width: 55%;
+    @media all and (min-width: 1440px) {
+      width: 25%;
+      font-size: 3rem;
     }
-    @media screen and (width: 768px) {
+
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      width: 30%;
+      font-size: 2.5rem;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
       width: 35%;
+      font-size: 2.5rem;
     }
   }
   a {
@@ -27,13 +33,28 @@
     color: $colour-accent;
     &:hover {
       color: $colour-secondary;
-      &:after {
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: bottom;
-        animation: ellipsis steps(4, end) 900ms infinite;
-        content: "\2026";
-        width: 0px;
+      .one {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0s;
+      }
+
+      .two {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0.2s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.2s;
+      }
+
+      .three {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0.3s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.3s;
       }
     }
   }

@@ -10,12 +10,13 @@
 
 .proj-prev {
   width: 100%;
-  $self: &;
+
   color: $colour-white;
   margin-bottom: $grid-gutter;
   text-align: center;
   font-style: italic;
   a {
+    margin-bottom: 3rem;
     display: block;
     color: $colour-white;
     text-decoration: none;
@@ -24,7 +25,13 @@
     @media screen and (min-width: 768px) {
       padding-top: 10rem;
       height: 40rem;
-      margin: 0 $layout-margin 0 $layout-margin;
+      margin: 0 $layout-margin 3rem $layout-margin;
+    }
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 30rem;
     }
   }
 }

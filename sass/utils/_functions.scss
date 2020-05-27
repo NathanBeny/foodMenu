@@ -3,6 +3,7 @@
     background-color: lighten($colour-menu, $i * 3%);
     transition: all 0.2s ease-in-out;
     &:hover {
+      transform: scale(1.05);
       background-color: $colour-menu;
     }
   }
@@ -19,8 +20,14 @@
   }
 }
 
-@keyframes ellipsis {
-  to {
-    width: 20px;
+@keyframes dot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
