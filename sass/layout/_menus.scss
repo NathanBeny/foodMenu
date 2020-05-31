@@ -47,11 +47,7 @@
   &__icon {
     padding-top: 1rem;
     font-size: 4rem;
-    background: -webkit-linear-gradient(
-      to right,
-      $colour-menu1 0%,
-      $colour-menu2 65%
-    );
+    background: linear-gradient(to right, $colour-menu1 0%, $colour-menu2 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -63,11 +59,7 @@
   }
   p {
     font-family: $font-menu2;
-    background: -webkit-linear-gradient(
-      to right,
-      $colour-menu2 0%,
-      $colour-menu1 100%
-    );
+    background: linear-gradient(to right, $colour-menu2 0%, $colour-menu1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -84,11 +76,7 @@
   p {
     font-family: $font-menu3;
     // ************************************
-    background: -webkit-linear-gradient(
-      to right,
-      $colour-menu3 0%,
-      $colour-menu4 100%
-    );
+    background: linear-gradient(to right, $colour-menu3 0%, $colour-menu4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     // ************************************
@@ -107,11 +95,7 @@
   p {
     font-family: $font-menu4;
     // ************************************
-    background: -webkit-linear-gradient(
-      to right,
-      $colour-menu5 0%,
-      $colour-menu6 100%
-    );
+    background: linear-gradient(to right, $colour-menu5 0%, $colour-menu6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     // ************************************
