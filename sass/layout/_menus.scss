@@ -47,12 +47,13 @@
   &__icon {
     padding-top: 1rem;
     font-size: 4rem;
-    background: linear-gradient(to right, $colour-menu1 0%, $colour-menu2 65%);
+    background: -webkit-linear-gradient(
+      to right,
+      $colour-menu1 0%,
+      $colour-menu2 65%
+    );
     -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 }
 .proj-prev__2 {
@@ -62,12 +63,13 @@
   }
   p {
     font-family: $font-menu2;
-    background: linear-gradient(to right, $colour-menu2 0%, $colour-menu1 100%);
+    background: -webkit-linear-gradient(
+      to right,
+      $colour-menu2 0%,
+      $colour-menu1 100%
+    );
     -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 
     @media screen and (min-width: 768px) {
       padding-top: 5rem;
@@ -82,12 +84,13 @@
   p {
     font-family: $font-menu3;
     // ************************************
-    background: linear-gradient(to right, $colour-menu3 0%, $colour-menu4 100%);
+    background: -webkit-linear-gradient(
+      to right,
+      $colour-menu3 0%,
+      $colour-menu4 100%
+    );
     -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
     // ************************************
     font-style: italic;
     @media screen and (min-width: 768px) {
@@ -104,12 +107,13 @@
   p {
     font-family: $font-menu4;
     // ************************************
-    background: linear-gradient(to right, $colour-menu5 0%, $colour-menu6 100%);
+    background: -webkit-linear-gradient(
+      to right,
+      $colour-menu5 0%,
+      $colour-menu6 100%
+    );
     -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
     // ************************************
     font-style: italic;
     @media screen and (min-width: 768px) {

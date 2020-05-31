@@ -32,17 +32,14 @@
         font-size: 3rem;
       }
       &__title {
-        background: linear-gradient(
+        background: -webkit-linear-gradient(
           to right,
           map-get($map: $color1-menu__titre, $key: $color1-title) 10%,
           map-get($map: $color2-menu__titre, $key: $color2-title) 60%,
           map-get($map: $color3-menu__titre, $key: $color3-title) 80%
         );
         -webkit-background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        -webkit-text-fill-color: transparent;
       }
 
       &__step {
